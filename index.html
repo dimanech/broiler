@@ -32,6 +32,7 @@
 		body {
 			margin: 0;
 			height: 100%;
+			min-width: 320px;
 		}
 		
 		.inner {
@@ -44,7 +45,6 @@
 		
 		h1 {
 			font-size: 70px;
-			color: white;
 		}
 		
 		h1 span {
@@ -54,7 +54,18 @@
 		p {
 			margin-top: -40px;
 			font-size: 26px;
-			letter-spacing: 2px;
+			letter-spacing: 0.1em;
+		}
+		
+		@media all and (max-width: 768px) {
+			h1 {
+				font-size: 40px;
+			}
+			
+			p {
+				margin-top: -30px;
+				font-size: 16px;
+			}
 		}
 		
 		.Background {
